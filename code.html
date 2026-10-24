@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+
+<html lang="en" style="background-color: #faf4f8; color: #2e1a38; margin: 0; padding: 0; min-height: 100vh;"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" name="viewport"/>
+<title>Kate L. Pahilangco - Student Portfolio</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Righteous&amp;family=Roboto:wght@300;400;500;700&amp;family=JetBrains+Mono:wght@400;500;600&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    html, body {
+      background-color: #faf4f8 !important;
+      color: #2e1a38 !important;
+      font-family: 'Roboto', sans-serif !important;
+      margin: 0 !important;
+      padding: 0 !important;
+      min-height: 100vh !important;
+      scroll-behavior: smooth;
+      opacity: 1 !important;
+      visibility: visible !important;
+    }
+    h1, h2, h3, h4, .font-heading, .font-brand {
+      font-family: 'Righteous', cursive, sans-serif !important;
+    }
+    .pb-safe { padding-bottom: max(env(safe-area-inset-bottom, 0px), 1rem); }
+    .pt-safe { padding-top: max(env(safe-area-inset-top, 0px), 0.5rem); }
+  </style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "surface-dim": "#f0e6ee",
+            "on-secondary": "#ffffff",
+            "on-tertiary-container": "#003930",
+            "secondary-container": "#e8e0ff",
+            "secondary-fixed": "#e6deff",
+            "background": "#faf4f8",
+            "error": "#ba1a1a",
+            "surface-tint": "#ec729c",
+            "on-tertiary-fixed": "#00201a",
+            "surface-container-highest": "#f3e8f2",
+            "surface-container-low": "#fffafd",
+            "surface-container": "#fff0f6",
+            "inverse-surface": "#313034",
+            "inverse-primary": "#ffb1c7",
+            "on-secondary-fixed-variant": "#493792",
+            "surface-bright": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "on-surface-variant": "#634759",
+            "primary-fixed-dim": "#ffb1c7",
+            "on-background": "#2e1a38",
+            "outline-variant": "#f0d4e2",
+            "tertiary-fixed-dim": "#6bd9c1",
+            "on-primary-container": "#670333",
+            "inverse-on-surface": "#f3eff4",
+            "on-error": "#ffffff",
+            "tertiary": "#008774",
+            "on-error-container": "#93000a",
+            "tertiary-container": "#cbfcee",
+            "on-primary-fixed": "#3e001d",
+            "on-surface": "#2e1a38",
+            "primary": "#ec729c",
+            "error-container": "#ffdad6",
+            "on-tertiary": "#ffffff",
+            "tertiary-fixed": "#88f6dd",
+            "outline": "#c9a6ba",
+            "on-secondary-fixed": "#1c0062",
+            "on-primary": "#ffffff",
+            "on-primary-fixed-variant": "#831e48",
+            "secondary": "#7c68d6",
+            "surface-container-high": "#fcebf2",
+            "surface-variant": "#fbe8f1",
+            "primary-fixed": "#ffd9e2",
+            "secondary-fixed-dim": "#cabeff",
+            "surface": "#faf4f8"
+          },
+          fontFamily: {
+            "display": ["Righteous", "cursive", "sans-serif"],
+            "headline": ["Righteous", "cursive", "sans-serif"],
+            "body": ["Roboto", "sans-serif"],
+            "mono": ["JetBrains Mono", "monospace"]
+          }
+        }
+      }
+    };
+  </script>
+</head>
+<body class="bg-[#faf4f8] text-[#2e1a38] min-h-screen selection:bg-[#ec729c]/25 selection:text-[#a23760]">
+<div class="max-w-md mx-auto px-5 pt-safe pb-safe min-h-screen flex flex-col justify-between py-4">
+<!-- Sticky Navigation Bar -->
+<nav class="sticky top-0 z-50 -mx-5 px-5 py-3 mb-2 bg-[#faf4f8]/90 backdrop-blur-md border-b border-[#f3d7e6] flex items-center justify-between font-mono text-xs">
+<a class="flex items-center gap-1.5 focus:outline-none" href="#home">
+<span class="w-2.5 h-2.5 rounded-full bg-[#ec729c] shadow-sm shadow-[#ec729c]/50"></span>
+<span class="text-sm font-bold tracking-wider text-[#2e1a38] uppercase font-brand">KP</span>
+</a>
+<div class="flex items-center gap-4 text-xs font-medium text-[#634759]">
+<a class="hover:text-[#ec729c] transition-colors text-[11px] tracking-wide" href="#home">Home</a>
+<a class="hover:text-[#ec729c] transition-colors text-[11px] tracking-wide" href="#about">About</a>
+<a class="hover:text-[#ec729c] transition-colors text-[11px] tracking-wide" href="#projects">Projects</a>
+<a class="hover:text-[#a23760] transition-colors text-[11px] tracking-wide text-[#ec729c] font-bold" href="#contact">Contact</a>
+</div>
+</nav>
+<!-- Sub-header Bar -->
+<header class="flex items-center justify-between pb-3.5 border-b border-[#f0d4e2]">
+<div class="flex items-center gap-2">
+<span class="w-2 h-2 rounded-full bg-[#ec729c]"></span>
+<span class="font-mono text-xs tracking-wider text-[#7e556e] uppercase font-bold" style="letter-spacing: 0.16em;">Student Portfolio</span>
+</div>
+<span class="font-mono text-[10px] text-[#a23760] bg-[#ffd9e2] px-2.5 py-0.5 rounded-full border border-[#f7b6cb] uppercase font-bold tracking-wider">Open to Internship</span>
+</header>
+<!-- Main Content Area -->
+<main class="flex flex-col gap-5 py-4">
+<!-- Hero Profile Section (#home) -->
+<section class="flex flex-col sm:flex-row items-center sm:items-start gap-4 p-4 rounded-2xl bg-white/80 border border-[#f5d5e5] shadow-sm shadow-[#ec729c]/5" id="home" style="scroll-margin-top: 4.5rem;">
+<div class="relative shrink-0">
+<img alt="Kate L. Pahilangco" class="w-24 h-24 rounded-full object-cover ring-3 ring-[#ffb1c7] shadow-md shadow-[#ec729c]/20" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBSCya6pU6W4t15zPVYKHX-H8elC9N0uTNsBHjODw9YmoGBzqmXXSKQLNjGxoT_GNpXDtkA7Khlbn7FBvRltX5jUKPoI1LXeHPFkDXT03Rhc_24ArcvhcdgyEUVi4AGo6cmOwbg1cc0E39V4MAONJIhaLhJa953essGizdAd1sAaTtAjksm8INWSUJLvJW9hUgW4KWysbIAvDFJm3jZ_zU0XJa4pkWFmzMbsECvHO3luvuKinHXVpSa6HOMhtwCrdn3Mhw"/>
+<span class="absolute bottom-1 right-1 w-3.5 h-3.5 rounded-full bg-[#34d399] ring-2 ring-white" title="Available for Internship / OJT"></span>
+</div>
+<div class="flex flex-col text-center sm:text-left min-w-0">
+<div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 mb-1">
+<h1 class="text-xl sm:text-2xl font-bold text-[#2e1a38] tracking-tight leading-snug font-brand">Kate L. Pahilangco</h1>
+<span class="font-mono text-[10px] text-[#006b5b] bg-[#d1fae5] px-2.5 py-0.5 rounded-full border border-[#a7f3d0] uppercase font-bold tracking-wide">Open to OJT</span>
+</div>
+<p class="text-xs text-[#7c68d6] font-semibold">4th Year BSIT Student • Cebu Eastern College</p>
+<p class="text-xs text-[#554247] mt-2 leading-relaxed">
+            Aspiring UI/UX designer and frontend beginner passionate about clean typography, wireframing in Figma, and crafting accessible HTML5 &amp; CSS web layouts. Currently actively seeking an internship / OJT position in Cebu.
+          </p>
+<div class="flex flex-wrap items-center justify-center sm:justify-start gap-2 mt-3.5">
+<a class="px-3.5 py-1.5 rounded-full bg-gradient-to-r from-[#ec729c] to-[#f472b6] text-white font-semibold text-xs flex items-center gap-1.5 shadow-sm shadow-[#ec729c]/30 hover:opacity-95 active:scale-95 transition-all" href="#contact">
+<span class="material-symbols-outlined text-[15px]">mail</span>
+<span class="">Get in Touch</span>
+</a>
+<a class="px-3.5 py-1.5 rounded-full bg-[#f3e8ff] hover:bg-[#ede0fe] text-[#6150ac] text-xs font-semibold border border-[#d8b4fe] flex items-center gap-1.5 transition-colors shadow-sm" href="#projects">
+<span class="material-symbols-outlined text-[15px] text-[#7c68d6]">folder</span>
+<span class="">View Projects</span>
+</a>
+</div>
+</div>
+</section>
+<!-- About & Education Section (#about) -->
+<section class="flex flex-col gap-3" id="about" style="scroll-margin-top: 4.5rem;">
+<div class="p-4 rounded-2xl bg-white/80 border border-[#f5d5e5] shadow-sm shadow-[#ec729c]/5 flex flex-col gap-3">
+<div class="flex items-center justify-between border-b border-[#f7e1ec] pb-2">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-[#ec729c]">school</span>
+<h2 class="font-mono text-xs uppercase tracking-wider text-[#a23760] font-brand">Education</h2>
+</div>
+<span class="font-mono text-[11px] font-semibold text-[#7c68d6]">2026 – Present</span>
+</div>
+<div>
+<h3 class="text-sm font-semibold text-[#2e1a38] font-brand tracking-wide">Bachelor of Science in Information Technology</h3>
+<p class="text-xs text-[#6150ac] mt-0.5 font-medium">Cebu Eastern College • Expected Graduation 2027</p>
+</div>
+<div class="pt-0.5">
+<p class="font-mono text-[10px] uppercase tracking-wider text-[#887177] font-semibold mb-1">What I'm Focusing On</p>
+<p class="text-xs text-[#554247] leading-relaxed">
+              Designing accessible web interfaces, translating Figma design mockups into semantic, responsive HTML &amp; CSS, and mastering frontend core foundations.
+            </p>
+</div>
+<div class="flex flex-wrap gap-1.5 pt-1">
+<span class="px-2.5 py-0.5 text-[10px] font-mono rounded-full bg-[#fff0f6] text-[#a23760] border border-[#ffd4e5] font-medium">UI Design</span>
+<span class="px-2.5 py-0.5 text-[10px] font-mono rounded-full bg-[#f3e8ff] text-[#6150ac] border border-[#e9d5ff] font-medium">Web Layouts</span>
+<span class="px-2.5 py-0.5 text-[10px] font-mono rounded-full bg-[#e6fffa] text-[#006b5b] border border-[#bbf7d0] font-medium">Usability</span>
+<span class="px-2.5 py-0.5 text-[10px] font-mono rounded-full bg-[#fef3c7] text-[#92400e] border border-[#fde68a] font-medium">Responsive Design</span>
+</div>
+</div>
+</section>
+<!-- Categorized Skills & Tools -->
+<section class="flex flex-col gap-2.5">
+<h2 class="font-mono text-xs uppercase tracking-wider text-[#7e556e] font-brand">Skills &amp; Tools</h2>
+<div class="flex flex-col gap-2">
+<!-- Group 1: Design & Prototyping -->
+<div class="p-3.5 rounded-xl bg-white/80 border border-[#f5d5e5] shadow-sm flex flex-col gap-2">
+<span class="font-mono text-[10px] text-[#a23760] uppercase tracking-wider font-bold">Design &amp; Prototyping</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 text-xs rounded-lg bg-[#fff0f6] text-[#a23760] font-mono font-medium border border-[#ffd4e5]">Figma</span>
+<span class="px-2.5 py-1 text-xs rounded-lg bg-[#faf4f8] text-[#2e1a38] font-mono border border-[#f0d4e2]">Wireframing</span>
+<span class="px-2.5 py-1 text-xs rounded-lg bg-[#faf4f8] text-[#2e1a38] font-mono border border-[#f0d4e2]">UI Layouts</span>
+<span class="px-2.5 py-1 text-xs rounded-lg bg-[#faf4f8] text-[#2e1a38] font-mono border border-[#f0d4e2]">Prototyping</span>
+</div>
+</div>
+<!-- Group 2: Web & Frontend -->
+<div class="p-3.5 rounded-xl bg-white/80 border border-[#f5d5e5] shadow-sm flex flex-col gap-2">
+<span class="font-mono text-[10px] text-[#6150ac] uppercase tracking-wider font-bold">Web &amp; Frontend</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 text-xs rounded-lg bg-[#f3e8ff] text-[#6150ac] font-mono font-medium border border-[#e9d5ff]">HTML5</span>
+<span class="px-2.5 py-1 text-xs rounded-lg bg-[#f3e8ff] text-[#6150ac] font-mono font-medium border border-[#e9d5ff]">CSS3</span>
+<span class="px-2.5 py-1 text-xs rounded-lg bg-[#faf4f8] text-[#2e1a38] font-mono border border-[#f0d4e2]">Responsive Design</span>
+<span class="px-2.5 py-1 text-xs rounded-lg bg-[#faf4f8] text-[#2e1a38] font-mono border border-[#f0d4e2]">Flexbox / Grid</span>
+<span class="px-2.5 py-1 text-xs rounded-lg bg-[#e0f2fe] text-[#0369a1] font-mono border border-[#bae6fd]">Basic JavaScript</span>
+</div>
+</div>
+<!-- Group 3: Tools & Workflow -->
+<div class="p-3.5 rounded-xl bg-white/80 border border-[#f5d5e5] shadow-sm flex flex-col gap-2">
+<span class="font-mono text-[10px] text-[#006b5b] uppercase tracking-wider font-bold">Tools &amp; Workflow</span>
+<div class="flex flex-wrap gap-1.5">
+<span class="px-2.5 py-1 text-xs rounded-lg bg-[#e6fffa] text-[#006b5b] font-mono font-medium border border-[#bbf7d0]">VS Code</span>
+<span class="px-2.5 py-1 text-xs rounded-lg bg-[#faf4f8] text-[#554247] font-mono border border-[#f0d4e2]">Git &amp; GitHub</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Featured Projects Section (#projects) -->
+<section class="flex flex-col gap-2.5" id="projects" style="scroll-margin-top: 4.5rem;">
+<div class="flex items-center justify-between">
+<h2 class="font-mono text-xs uppercase tracking-wider text-[#7e556e] font-brand">Featured Projects</h2>
+<span class="font-mono text-[10px] font-semibold text-[#887177] bg-[#f3e8f2] px-2 py-0.5 rounded-full">3 Student Works</span>
+</div>
+<div class="flex flex-col gap-3.5">
+<!-- Project 1 -->
+<div class="p-3.5 rounded-2xl bg-white/90 border border-[#f5d5e5] shadow-sm shadow-[#ec729c]/5 flex flex-col gap-2.5">
+<div class="w-full h-40 rounded-xl overflow-hidden border border-[#f0d4e2] shrink-0 bg-[#eef2ff]">
+<img alt="Cebu City University Finder and Program Recommendations" class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDB_Fn_2OlRZkha4ENJCKmA8zsLTlKbkiU9x8eoVV6xKk2hDFfVGW0YJ4DSdAAxt5cwduTV_pssO95XfwE_lI4z_94b3DfS0aqNDkfnqchH25HGhH7uhryyFjDVJUczB0wcQ97P89Vx-cThAxkn5EXi-U0_ZMLLsB1OdpacmEFKenjqnwiMh4mld68UYzlr5hUjtIbvzJ0pwF7U9vFF1ccALi1gD7y06xmKvKUc6WYV_pZDd0aOdmDmWNtl3coc2pqSiN0"/>
+</div>
+<div>
+<h3 class="text-sm font-semibold text-[#2e1a38] font-brand">Cebu City University Finder</h3>
+<p class="text-xs text-[#554247] mt-1 leading-relaxed">
+                A web platform helping students explore universities and find ideal degree programs across Cebu City with interactive course recommendations.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-0.5">
+<span class="px-2.5 py-0.5 rounded-full bg-[#fff0f6] text-[10px] font-mono text-[#a23760] font-semibold border border-[#ffd4e5]">Figma</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#f3e8ff] text-[10px] font-mono text-[#6150ac] border border-[#e9d5ff]">UI/UX Design</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#e0f2fe] text-[10px] font-mono text-[#0369a1] border border-[#bae6fd]">Web Layout</span>
+</div>
+</div>
+<!-- Project 2 -->
+<div class="p-3.5 rounded-2xl bg-white/90 border border-[#f5d5e5] shadow-sm shadow-[#ec729c]/5 flex flex-col gap-2.5">
+<div class="w-full h-44 rounded-xl overflow-hidden border border-[#f0d4e2] shrink-0 bg-[#fff7ed]">
+<img alt="Coffee &amp; Bakery Mobile App Showcase" class="w-full h-full object-cover transition-transform duration-300 hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida/AEtjO1WNw5gLexv5Rcc3nTo0CWx1QXo7tRPmCKj_x4B6bPhJ3v1qH_UCMMJicLjBkTaYLr3zFB1Ap974dp8AepDr7RtXONz-ajM5qePWwKAieXxeZ_y7WGsoQ_mNEbh4DuR4RfUYOCS6faHZxL0eYAIcVijZuqZJz4BcrSdgdlRIXpD49eLiPccunG4m0SO3FqnWvJW3_xTaXP-lF2dKZIdTj7w7lCwP1cbgWmZY-TzeO42Cje-JDAXw7-x6rG0"/>
+</div>
+<div>
+<h3 class="text-sm font-semibold text-[#2e1a38] font-brand">Coffee &amp; Bakery Mobile App UI</h3>
+<p class="text-xs text-[#554247] mt-1 leading-relaxed">
+                Mobile e-commerce concept for a cozy coffee and pastry shop featuring hero drink showcases, dessert best-sellers, and an intuitive mobile menu layout.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-0.5">
+<span class="px-2.5 py-0.5 rounded-full bg-[#fff0f6] text-[10px] font-mono text-[#a23760] font-semibold border border-[#ffd4e5]">Figma</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#fef3c7] text-[10px] font-mono text-[#92400e] border border-[#fde68a]">UI Design</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#e0f2fe] text-[10px] font-mono text-[#0369a1] border border-[#bae6fd]">Mobile Layout</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#f3e8ff] text-[10px] font-mono text-[#6150ac] border border-[#e9d5ff]">Prototyping</span>
+</div>
+</div>
+<!-- Project 3 -->
+<div class="p-3.5 rounded-2xl bg-white/90 border border-[#f5d5e5] shadow-sm shadow-[#ec729c]/5 flex flex-col gap-2.5">
+<div class="w-full h-40 rounded-xl overflow-hidden border border-[#f0d4e2] shrink-0 bg-[#fdf2f8]">
+<img alt="Yvette's Gown &amp; Dress Rental Web UI" class="w-full h-full object-cover object-top transition-transform duration-300 hover:scale-[1.02]" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBEj6iMgr7vXLti6rV2ipXDctIsT00wZDT_6HoN7W05CHcnMSycf6_YGambuew80s5vxdadlLw-YE2s6zhjIU68lN-vAg7Sqz8PgBSJn5wqCmOhXaLIMBi3Jwz-LRMZcofhWWvDX1N0lyD9PyCYm7Gvn4F0zj4P-oWQsgbOScYK3P35SRatP_IyOqE5KZXz5PpPFknt9IiXaYomzzxybu7C2-47wSSZxUGcdR8aUWUPyILKN0NAjWC7f5TtUhNO4kmRdJQ"/>
+</div>
+<div>
+<h3 class="text-sm font-semibold text-[#2e1a38] font-brand">Yvette's Gown Rental Web UI</h3>
+<p class="text-xs text-[#554247] mt-1 leading-relaxed">
+                Boutique gown and formal dress rental web landing page concept featuring elegant fashion showcase cards and e-commerce rental reservation flow.
+              </p>
+</div>
+<div class="flex flex-wrap gap-1.5 mt-0.5">
+<span class="px-2.5 py-0.5 rounded-full bg-[#fff0f6] text-[10px] font-mono text-[#a23760] font-semibold border border-[#ffd4e5]">Figma</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#f3e8ff] text-[10px] font-mono text-[#6150ac] border border-[#e9d5ff]">UI Design</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#e6fffa] text-[10px] font-mono text-[#006b5b] border border-[#bbf7d0]">HTML/CSS</span>
+<span class="px-2.5 py-0.5 rounded-full bg-[#e0f2fe] text-[10px] font-mono text-[#0369a1] border border-[#bae6fd]">Web Layout</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact Section (#contact) -->
+<section class="p-4 rounded-2xl bg-gradient-to-br from-[#fff0f6] via-[#fcf8fd] to-[#f3e8ff] border border-[#f5d5e5] shadow-sm flex flex-col gap-3" id="contact" style="scroll-margin-top: 4.5rem;">
+<div class="flex items-center justify-between">
+<div class="flex items-center gap-1.5">
+<span class="material-symbols-outlined text-sm text-[#ec729c]">alternate_email</span>
+<h2 class="font-mono text-xs uppercase tracking-wider text-[#a23760] font-brand">Get in Touch</h2>
+</div>
+<span class="font-mono text-[10px] font-semibold text-[#6150ac] bg-[#e8e0ff] px-2 py-0.5 rounded-full">Cebu City, PH</span>
+</div>
+<p class="text-xs text-[#554247] leading-relaxed">
+          Available for student internship / OJT opportunities starting this semester. Feel free to reach out via school email or connect with me online.
+        </p>
+<div class="flex flex-col gap-2 text-xs text-[#554247]">
+<div class="flex items-center gap-2 p-2.5 rounded-xl bg-white border border-[#f0d4e2] shadow-sm">
+<span class="material-symbols-outlined text-[16px] text-[#ec729c]">mail</span>
+<a class="text-[#2e1a38] hover:text-[#ec729c] hover:underline font-mono text-xs truncate font-medium" href="mailto:pahilangcokate@gmail.com">pahilangcokate@gmail.com</a>
+</div>
+<div class="flex items-center gap-2 text-xs pt-0.5">
+<span class="material-symbols-outlined text-[15px] text-[#ec729c]">location_on</span>
+<span class="font-medium text-[#554247]">Cebu City, Philippines</span>
+<span class="text-[#dbc0c6]">•</span>
+<a class="text-[#6150ac] hover:underline flex items-center gap-0.5 font-medium" href="https://github.com/kxtejo" rel="noopener noreferrer" target="_blank">
+<span class="">GitHub</span>
+</a>
+<span class="text-[#dbc0c6]">•</span>
+<a class="text-[#6150ac] hover:underline flex items-center gap-0.5 font-medium" href="https://www.linkedin.com/in/kate-pahilangco-751973256/" rel="noopener noreferrer" target="_blank">
+<span class="">LinkedIn</span>
+</a>
+</div>
+</div>
+<a class="mt-1 w-full py-2.5 px-3 rounded-full bg-gradient-to-r from-[#ec729c] to-[#f472b6] text-white font-semibold text-xs text-center flex items-center justify-center gap-2 shadow-md shadow-[#ec729c]/25 active:scale-[0.99] transition-all hover:opacity-95" href="mailto:pahilangcokate@gmail.com">
+<span class="material-symbols-outlined text-[16px]">send</span>
+<span class="">Send Email to Kate</span>
+</a>
+</section>
+</main>
+<!-- Footer -->
+<footer class="pt-3.5 pb-2 border-t border-[#f0d4e2] flex justify-between items-center text-[10px] text-[#887177] font-mono">
+<span class="">© 2026 Kate L. Pahilangco</span>
+<span class="">Cebu City, PH</span>
+</footer>
+</div>
+</body></html>
